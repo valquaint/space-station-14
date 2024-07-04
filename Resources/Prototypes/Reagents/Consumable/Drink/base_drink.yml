@@ -77,3 +77,29 @@
     collection: FootstepSticky
     params:
       volume: 6
+
+#Beans
+- type: reagent
+  id: BaseBeans
+  group: Drinks
+  abstract: true
+  slippery: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:SatiateHunger
+        factor: 3
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:FlammableReaction
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: 1
+  tileReactions:
+  - !type:SpillIfPuddlePresentTileReaction { }
+  - !type:FlammableTileReaction
+    temperatureMultiplier: 1.35

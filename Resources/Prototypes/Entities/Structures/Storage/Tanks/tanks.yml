@@ -216,3 +216,49 @@
       fillBaseName: watertank-2-
     - type: ExaminableSolution
       solution: tank
+
+#Beans
+
+- type: entity
+  id: BeanTank
+  parent: [StorageTank, StructureWheeled]
+  name: bean tank
+  description: A large tank of beans. It's used to store high amounts of beans.
+  suffix: Empty
+  components:
+  - type: StaticPrice
+    price: 5000
+  - type: Sprite
+    sprite: Structures/Storage/tanks.rsi
+    layers:
+      - state: fueltank-2
+      - state: fueltank-2-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fueltank-2-
+  - type: ExaminableSolution
+    solution: tank
+
+- type: entity
+  parent: BeanTank
+  id: BeanTankFull
+  suffix: Full
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Beans
+          Quantity: 1500
+  - type: DamageOnToolInteract
+    tools: Welding
+    weldingDamage:
+      types:
+        Heat: 10
+  - type: PacifismDangerousAttack
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 80 

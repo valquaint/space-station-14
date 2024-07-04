@@ -978,3 +978,52 @@
       drink:
         maxVol: 150
   - type: Drink
+
+#Beans
+- type: entity
+  parent: [DrinkBottleVisualsOpenable, DrinkBottlePlasticBaseFull]
+  id: DrinkBeanBottleFull
+  name: bean bottle
+  description: A bottle of myserious brownish fluid. You think you probably dont want to know what is inside.
+  components:
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Beans
+          Quantity: 30
+  - type: Drink
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/waterbottle.rsi
+    layers:
+      - state: icon
+        map: ["enum.OpenableVisuals.Layer"]
+      - state: icon-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: icon-
+    inHandsMaxFillLevels: 2
+    inHandsFillBaseName: -fill-
+  - type: Sealable
+
+- type: entity
+  parent: Jug
+  name: jug (beans)
+  id: JugBeans
+  description: A jug of myserious brownish fluid. Why someone would have this large of a jug of beans, you really shouldn't think about.
+  noSpawn: true
+  components:
+    - type: Label
+      currentLabel: reagent-name-beans
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          reagents:
+            - ReagentId: Beans
+              Quantity: 200

@@ -96,3 +96,6 @@ reagent-desc-white-gilgamesh = A sickening mixture of milk and beer. Makes you f
 
 reagent-name-mopwata = mopwata
 reagent-desc-mopwata = Dirty, stagnant mop water.
+
+reagent-name-beans = beans
+reagent-desc-beans = Beans!Beans!Beans!Beans!Beans!

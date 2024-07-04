@@ -550,3 +550,21 @@
       effects:
       - !type:SatiateThirst
         factor: 0.6
+
+# Beans
+- type: reagent
+  id: Beans
+  name: reagent-name-beans
+  parent: BaseBeans
+  desc: reagent-desc-beans
+  physicalDesc: reagent-physical-desc-beany
+  flavor: beany
+  color: "#B3744D"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:SatiateHunger
+        factor: 2

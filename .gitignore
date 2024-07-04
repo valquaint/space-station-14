@@ -306,3 +306,10 @@ Resources/MapImages
 
 # Direnv stuff
 .direnv/
+
+# Rei's Dockerization Configs
+compose.yml
+dockerfile
+
+# Server Config
+**/server_config.toml

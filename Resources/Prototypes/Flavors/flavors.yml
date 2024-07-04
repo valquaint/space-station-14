@@ -1103,3 +1103,9 @@
   id: paintthinner
   flavorType: Complex
   description: flavor-complex-paint-thinner
+
+  #Beans
+- type: flavor
+  id: beany
+  flavorType: Base
+  description: flavor-base-beany
