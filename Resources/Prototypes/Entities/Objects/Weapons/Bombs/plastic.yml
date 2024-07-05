@@ -106,3 +106,38 @@
     maxIntensity: 30
     canCreateVacuum: false
   - type: ExplodeOnTrigger
+
+#Beans
+- type: entity
+  name: dynamite
+  description: I think we all know what dynamite does.
+  parent: BasePlasticExplosive
+  id: Dynamite
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Bombs/seismic.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: OnUseTimerTrigger
+    delay: 5
+    delayOptions: [5, 10, 15, 20]
+    initialBeepDelay: 0
+    beepSound:
+      path: /Audio/Effects/Cargo/buzz_two.ogg
+      params:
+        volume: -6
+    startOnStick: false
+    canToggleStartOnStick: true
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 60
+    intensitySlope: 5
+    maxIntensity: 30
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger

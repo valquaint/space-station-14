@@ -466,3 +466,20 @@
           reagents:
             - ReagentId: WeldingFuel
               Quantity: 200
+
+#Beans
+- type: entity
+  parent: Jug
+  name: jug
+  suffix: silica
+  id: JugSilica
+  noSpawn: true
+  components:
+    - type: Label
+      currentLabel: reagent-name-welding-fuel
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          reagents:
+            - ReagentId: Silica
+              Quantity: 200

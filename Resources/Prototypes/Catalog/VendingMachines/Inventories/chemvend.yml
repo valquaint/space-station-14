@@ -22,6 +22,7 @@
     JugSodium: 2
     JugSugar: 3
     JugSulfur: 2
+    JugSilica: 2
   emaggedInventory:
     ToxinChemistryBottle: 1
     BeanChemistryBottle: 1
@@ -50,6 +51,7 @@
     JugSodium: 2
     JugSugar: 3
     JugSulfur: 2
+    JugSilica: 2
     JugWeldingFuel: 1
   emaggedInventory:
     PaxChemistryBottle: 3

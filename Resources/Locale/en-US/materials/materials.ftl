@@ -26,6 +26,7 @@ materials-web = silk
 materials-bones = bone
 materials-coal = coal
 materials-gunpowder = gunpowder
+materials-dyanmite-base = dyanmite base
 
 # Ores
 materials-raw-iron = raw iron

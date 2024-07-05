@@ -108,6 +108,17 @@
   products:
     AmmoniumNitrate: 3
 
+#Beans
+- type: reaction
+  id: SilicaGel
+  reactants:
+    Silica:
+      amount: 1
+    SulfuricAcid: 
+      amount: 1
+  products:
+    SilicaGel: 3
+
 - type: reaction
   id: FluorosulfuricAcid
   reactants:

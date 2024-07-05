@@ -57,6 +57,13 @@
   desc: reagent-desc-sodium-carbonate
   physicalDesc: reagent-physical-desc-powdery
   color: white
+#Beans
+  - type: reagent
+  id: Silica
+  name: reagent-name-silica
+  desc: reagent-desc-silica
+  physicalDesc: reagent-physical-desc-powdery
+  color: white
 
 - type: reagent
   id: Artifexium
