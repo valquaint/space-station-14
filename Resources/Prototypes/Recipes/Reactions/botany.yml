@@ -10,6 +10,17 @@
   products:
     EZNutrient: 3
 
+#Beans
+- type: reaction
+  id: AMNutrient
+  reactants:
+    AmmoniumNitrate:
+      amount: 2
+    Water:
+      amount: 1
+  products:
+    AMNutrient: 3
+
 - type: reaction
   id: RobustHarvest
   reactants:

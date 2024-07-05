@@ -10,6 +10,17 @@
   products:
     Dylovene: 3
 
+#Beans
+- type: reaction
+  id: Nitroglycerin
+  reactants:
+    SulfuricAcid:
+      amount: 1
+    NitricAcid:
+      amount: 1
+  products:
+    Nitroglycerin: 3
+
 - type: reaction
   id: Ethylredoxrazine
   reactants:

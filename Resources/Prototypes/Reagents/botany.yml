@@ -17,6 +17,26 @@
         - !type:OrganType
           type: Plant
 
+#Beans
+- type: reagent
+  id: AMNutrient
+  name: reagent-name-a-m-nutrient
+  group: Botanical
+  desc: reagent-desc-a-m-nutrient
+  flavor: bitter
+  color: "#FFFFFF"
+  physicalDesc: reagent-physical-desc-odorless
+  plantMetabolism:
+    - !type:PlantAdjustNutrition
+      amount: 4
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+        conditions:
+        - !type:OrganType
+          type: Plant
+
 - type: reagent
   id: Left4Zed
   name: reagent-name-left4-zed

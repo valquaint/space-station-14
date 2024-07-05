@@ -4,6 +4,14 @@ reagent-desc-acetone = A slick, slightly carcinogenic liquid. Has a multitude of
 reagent-name-phenol = phenol
 reagent-desc-phenol = An aromatic ring of carbon with a hydroxyl group. A useful precursor to some medicines, but has no healing properties on its own.
 
+##beans
+reagent-name-nitric-acid = nitric acid
+reagent-desc-nitric-acid = a highly corrosive and toxic liquid. It can cause severe burns and damage upon contact with skin. Handle with care!
+
+##beans
+reagent-name-sulfuric-acid = sulfuric acid
+reagent-desc-sulfuric-acid = A highly corrosive, dense, oily liquid. It can cause severe burns and damage upon contact with skin. Handle with care!
+
 reagent-name-sodium-carbonate = sodium carbonate
 reagent-desc-sodium-carbonate = A white, odorless, water-soluble salt that yields an alkaline solution in water.  Also known as soda ash.
 

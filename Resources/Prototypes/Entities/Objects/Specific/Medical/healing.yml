@@ -643,6 +643,27 @@
         - ReagentId: Bicaridine
           Quantity: 10
 
+#Beans
+- type: entity
+  name: pill
+  suffix: Nitroglycerin 10u
+  parent: Pill
+  id: PillNitroglycerin
+  components:
+  - type: Pill
+    pillType: 4
+  - type: Sprite
+    state: pill5
+  - type: Label
+    currentLabel: nitroglycerin 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nitroglycerin
+          Quantity: 10
+
 - type: entity
   name: pill canister
   parent: PillCanister
@@ -654,6 +675,20 @@
   - type: StorageFill
     contents:
     - id: PillBicaridine
+      amount: 5
+
+#Beans
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterNitroglycerin
+  suffix: Nitroglycerin 10u, 5
+  components:
+  - type: Label
+    currentLabel: nitroglycerin 10u
+  - type: StorageFill
+    contents:
+    - id: PillNitroglycerin
       amount: 5
 
 - type: entity
@@ -775,6 +810,11 @@
       prob: 0.10
       maxAmount: 7
       orGroup: RandomPill
+    #Beans
+    - id: PillNitroglycerin
+      prob: 0.075
+      maxAmount: 7
+      orGroup: RandomPill
     - id: PillCharcoal
       prob: 0.10
       maxAmount: 7
@@ -847,6 +887,20 @@
         maxVol: 15
         reagents:
         - ReagentId: Bicaridine
+          Quantity: 15
+
+#Beans
+- type: entity
+  name: nitroglycerin syringe
+  parent: PrefilledSyringe
+  id: SyringeNitroglycerin
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nitroglycerin
           Quantity: 15
 
 - type: entity

@@ -1,6 +1,9 @@
 reagent-name-e-z-nutrient = EZ nutrient
 reagent-desc-e-z-nutrient = Give your plants some of those EZ nutrients! Dionas find this delicious.
 
+reagent-name-a-m-nutrient = AM nutrient
+reagent-desc-a-m-nutrient = AM nutrient's got what plants crave. It's got electrolytes. I mean nitrogen...
+
 reagent-name-left4-zed = left-4-zed
 reagent-desc-left4-zed = A cocktail of mutagenic compounds that gives nutrients, harms and affects plant life's genome.
 

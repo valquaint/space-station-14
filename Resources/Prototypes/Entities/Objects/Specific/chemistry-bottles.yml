@@ -187,6 +187,21 @@
         - ReagentId: EZNutrient
           Quantity: 30
 
+#Beans
+- type: entity
+  id: AMNutrientChemistryBottle
+  name: am nutrient bottle
+  description: This will provide alot of nutrition to your plants.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: AMNutrient
+          Quantity: 30
+
 - type: entity
   id: Left4ZedChemistryBottle
   name: left-4-zed bottle
@@ -318,4 +333,17 @@
           maxVol: 30
           reagents:
             - ReagentId: Toxin
+              Quantity: 30
+#Beans
+- type: entity
+  id: BeanChemistryBottle
+  name: bean bottle
+  parent: BaseChemistryBottleFilled
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Beans
               Quantity: 30

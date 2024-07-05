@@ -86,6 +86,28 @@
   products:
     SulfuricAcid: 3
 
+#Beans
+- type: reaction
+  id: NitricAcid
+  reactants:
+    Ammonia:
+      amount: 1
+    Oxygen: 
+      amount: 2
+  products:
+    NitricAcid: 3
+
+#Beans
+- type: reaction
+  id: AmmoniumNitrate
+  reactants:
+    Ammonia:
+      amount: 1
+    NitricAcid: 
+      amount: 1
+  products:
+    AmmoniumNitrate: 3
+
 - type: reaction
   id: FluorosulfuricAcid
   reactants:
