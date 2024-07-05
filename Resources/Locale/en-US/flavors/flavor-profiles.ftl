@@ -271,4 +271,4 @@ flavor-complex-punishment = like punishment
 flavor-weh = like weh
 
 flavor-base-beany = like beans.. Beans? Beans.... Just beany.
-flavor-base-pain = Why does my everything hurt?
+flavor-base-pain = like... Why does my everything hurt?

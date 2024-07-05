@@ -164,6 +164,7 @@
 - type: reagent
   id: Nitroglycerin
   name: reagent-name-nitroglycerin
+  parent: BasePyrotechnic
   group: Medicine
   desc: reagent-desc-nitroglycerin
   physicalDesc: reagent-physical-desc-opaque
@@ -176,6 +177,7 @@
         damage:
           groups:
             Brute: -4
+          types:
             Bloodloss: -0.5
       - !type:HealthChange
         conditions:
@@ -194,6 +196,14 @@
         - !type:ReagentThreshold
           min: 7
       - !type:Drunk
+  tileReactions:
+  - !type:FlammableTileReaction
+    temperatureMultiplier: 0.2
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+        - !type:FlammableReaction
 
 - type: reagent
   id: Cryoxadone

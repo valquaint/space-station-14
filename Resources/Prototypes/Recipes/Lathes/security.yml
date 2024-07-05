@@ -697,7 +697,7 @@
   completetime: 3
   materials:
      Plastic: 100
-     DynamiteBase: 1
+     DynamiteBase: 100
 
 
 - type: latheRecipe

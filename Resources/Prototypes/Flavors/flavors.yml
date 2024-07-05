@@ -1111,7 +1111,7 @@
   description: flavor-base-beany
 
   #Beans
-  - type: flavor
+- type: flavor
   id: pain
   flavorType: Base
   description: flavor-base-pain

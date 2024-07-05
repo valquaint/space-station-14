@@ -1,7 +1,7 @@
 - type: vendingMachineInventory
   id: ChemVendInventory
   startingInventory:
-    Jug: 4
+    Jug: 6
     JugAluminium: 2
     JugCarbon: 4
     JugChlorine: 1
@@ -23,6 +23,9 @@
     JugSugar: 3
     JugSulfur: 2
     JugSilica: 2
+    JugNitroglycerin: 1
+    JugSilicaGel: 1
+    JugNitricAcid: 1
   emaggedInventory:
     ToxinChemistryBottle: 1
     BeanChemistryBottle: 1
@@ -30,7 +33,7 @@
 - type: vendingMachineInventory
   id: ChemVendInventorySyndicate
   startingInventory:
-    Jug: 4
+    Jug: 6
     JugAluminium: 2
     JugCarbon: 4
     JugChlorine: 1

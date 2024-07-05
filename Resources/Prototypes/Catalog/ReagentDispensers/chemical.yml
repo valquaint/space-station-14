@@ -21,6 +21,10 @@
   - JugSilicon
   - JugSodium
   - JugSulfur
+  - JugSilica
+  - JugNitroglycerin
+  - JugSilicaGel
+  - JugNitricAcid
 
 - type: reagentDispenserInventory
   id: EmptyInventory

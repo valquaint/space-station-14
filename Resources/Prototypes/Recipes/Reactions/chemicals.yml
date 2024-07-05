@@ -534,3 +534,21 @@
       amount: 1
   products:
     Tazinide: 1
+
+# #Beans
+# - type: reaction
+#   id: NitroglycerinExplosion
+#   impact: High
+#   priority: 20
+#   reactants:
+#     Nitroglycerin:
+#       amount: 1
+#     Oxygen:
+#       amount: 1
+#   effects:
+#     - !type:ExplosionReactionEffect
+#       explosionType: Default
+#       maxIntensity: 100
+#       intensityPerUnit: 0.5
+#       intensitySlope: 4
+#       maxTotalIntensity: 100

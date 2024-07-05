@@ -89,7 +89,7 @@
   spawn: MaterialGunpowder
   maxCount: 60
 #Beans
-  - type: stack
+- type: stack
   id: DynamiteBase
   name: dyanitebase
   icon: { sprite: /Textures/Objects/Misc/reagent_fillings.rsi, state: powderpile }

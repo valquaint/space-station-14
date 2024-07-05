@@ -213,4 +213,4 @@
       amount: 2
   effects:
     - !type:CreateEntityReactionEffect
-      entity: MaterialDynamiteBase
+      entity: SheetDynamiteBase

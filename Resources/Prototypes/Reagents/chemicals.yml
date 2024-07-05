@@ -58,12 +58,31 @@
   physicalDesc: reagent-physical-desc-powdery
   color: white
 #Beans
-  - type: reagent
+- type: reagent
   id: Silica
-  name: reagent-name-silica
+  name: Silica
   desc: reagent-desc-silica
   physicalDesc: reagent-physical-desc-powdery
   color: white
+
+#Beans
+- type: reagent
+  id: SilicaGel
+  name: Silica Gel
+  desc: reagent-desc-silicagel
+  flavor: horrible
+  physicalDesc: reagent-physical-desc-powdery
+  color: white
+  metabolisms:
+  Poison:
+    effects:
+    - !type:SatiateThirst
+      factor: -4
+    - !type:HealthChange
+      damage:
+        types:
+          Asphyxiation: 2
+          Poison: 1
 
 - type: reagent
   id: Artifexium

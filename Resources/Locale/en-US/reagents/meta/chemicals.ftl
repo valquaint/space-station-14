@@ -9,12 +9,12 @@ reagent-name-nitric-acid = nitric acid
 reagent-desc-nitric-acid = a highly corrosive and toxic liquid. It can cause severe burns and damage upon contact with skin. Handle with care!
 
 ##beans
-reagent-name-sulfuric-acid = sulfuric acid
-reagent-desc-sulfuric-acid = A highly corrosive, dense, oily liquid. It can cause severe burns and damage upon contact with skin. Handle with care!
+reagent-name-silica = silica
+reagent-desc-silica = Very fine quartz sand. Drinkable glass.
 
 ##beans
-reagent-name-silica = silica
-reagent-desc-silica = Very fine quartz sand. 
+reagent-name-silicagel = silica gel
+reagent-desc-silicagel = silical gel dessicant. No its not edible here either...
 
 reagent-name-sodium-carbonate = sodium carbonate
 reagent-desc-sodium-carbonate = A white, odorless, water-soluble salt that yields an alkaline solution in water.  Also known as soda ash.

@@ -640,23 +640,3 @@
       Gunpowder: 100
   - type: Item
     size: Tiny
-  
-#Beans
-- type: entity
-  parent: MaterialBase
-  id: MaterialDynamiteBase
-  name: dynamite base
-  description: An explosive compound.
-  components:
-  - type: Stack
-    stackType: DynamiteBase
-    count: 1
-  - type: Sprite
-    sprite: Objects/Misc/reagent_fillings.rsi
-    state: powderpile
-    color: "#ffe6e6"
-  - type: PhysicalComposition
-    materialComposition:
-      DynamiteBase: 100
-  - type: Item
-    size: Tiny
