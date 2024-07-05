@@ -649,7 +649,7 @@
   description: An explosive compound.
   components:
   - type: Stack
-    stackType: Gunpowder
+    stackType: DynamiteBase
     count: 1
   - type: Sprite
     sprite: Objects/Misc/reagent_fillings.rsi
