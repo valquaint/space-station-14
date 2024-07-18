@@ -201,3 +201,16 @@
   effects:
     - !type:CreateEntityReactionEffect
       entity: MaterialGunpowder
+
+#Beans
+- type: reaction
+  id: DynamiteBase
+  quantized: true
+  reactants:
+    Nitroglycerin:
+      amount: 1
+    SilicaGel:
+      amount: 2
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SheetDynamiteBase

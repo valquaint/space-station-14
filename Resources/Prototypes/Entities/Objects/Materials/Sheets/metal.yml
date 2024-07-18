@@ -229,3 +229,34 @@
   - type: Stack
     stackType: Plasteel
     count: 1
+
+#Beans
+- type: entity
+  parent: SheetPlasteel
+  id: MaterialDynamiteBase
+  name: dynamite base
+  description: An explosive compound.
+  components:
+  - type: Stack
+    stackType: DynamiteBase
+    count: 30
+  - type: PhysicalComposition
+    materialComposition:
+      DynamiteBase: 100
+  - type: Item
+    size: Tiny
+
+- type: entity
+  parent: SheetMetalBase
+  id: SheetDynamiteBase
+  name: dynamite base
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      DynamiteBase: 100
+  - type: Sprite
+    sprite: Objects/Misc/reagent_fillings.rsi
+    state: powderpile
+    color: "#ffe6e6"

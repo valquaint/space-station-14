@@ -7,6 +7,7 @@ These chemicals are used by botanists. Some of the chemicals change the properti
 <GuideReagentEmbed Reagent="Ammonia"/>
 <GuideReagentEmbed Reagent="Diethylamine"/>
 <GuideReagentEmbed Reagent="EZNutrient"/>
+<GuideReagentEmbed Reagent="AMNutrient"/>
 <GuideReagentEmbed Reagent="Left4Zed"/>
 <GuideReagentEmbed Reagent="RobustHarvest"/>
 <GuideReagentEmbed Reagent="UnstableMutagen"/>

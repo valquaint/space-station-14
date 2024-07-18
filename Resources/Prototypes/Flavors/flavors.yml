@@ -1109,3 +1109,9 @@
   id: beany
   flavorType: Base
   description: flavor-base-beany
+
+  #Beans
+- type: flavor
+  id: pain
+  flavorType: Base
+  description: flavor-base-pain

@@ -88,3 +88,10 @@
   icon: { sprite: /Textures/Objects/Misc/reagent_fillings.rsi, state: powderpile }
   spawn: MaterialGunpowder
   maxCount: 60
+#Beans
+- type: stack
+  id: DynamiteBase
+  name: dyanitebase
+  icon: { sprite: /Textures/Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  spawn: MaterialDynamiteBase
+  maxCount: 60

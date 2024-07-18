@@ -86,6 +86,39 @@
   products:
     SulfuricAcid: 3
 
+# Nitroglycerin
+- type: reaction
+  id: NitricAcid
+  reactants:
+    Ammonia:
+      amount: 1
+    Oxygen: 
+      amount: 2
+  products:
+    NitricAcid: 3
+
+# Nitroglycerin
+- type: reaction
+  id: AmmoniumNitrate
+  reactants:
+    Ammonia:
+      amount: 1
+    NitricAcid: 
+      amount: 1
+  products:
+    AmmoniumNitrate: 3
+
+# Nitroglycerin
+- type: reaction
+  id: SilicaGel
+  reactants:
+    Silica:
+      amount: 1
+    SulfuricAcid: 
+      amount: 1
+  products:
+    SilicaGel: 3
+
 - type: reaction
   id: FluorosulfuricAcid
   reactants:

@@ -124,3 +124,11 @@
   icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
   color: "#A9A9A9"
   price: 0
+#Beans
+- type: material
+  id: DynamiteBase
+  name: materials-dynamite-base
+  unit: materials-unit-piece
+  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  color: "#ffe6e6"
+  price: 0

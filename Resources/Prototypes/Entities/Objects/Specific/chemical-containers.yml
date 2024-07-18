@@ -466,3 +466,126 @@
           reagents:
             - ReagentId: WeldingFuel
               Quantity: 200
+
+#Beans
+- type: entity
+  parent: Jug
+  name: jug
+  suffix: silica
+  id: JugSilica
+  noSpawn: true
+  components:
+    - type: Label
+      currentLabel: reagent-name-scilica
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          reagents:
+            - ReagentId: Silica
+              Quantity: 200
+
+#Beans
+- type: entity
+  parent: Jug
+  name: jug
+  suffix: silicagel
+  id: JugSilicaGel
+  noSpawn: true
+  components:
+    - type: Label
+      currentLabel: reagent-name-scilicagel
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          reagents:
+            - ReagentId: SilicaGel
+              Quantity: 200
+
+#Beans
+- type: entity
+  parent: Jug
+  name: jug
+  suffix: nitricacid
+  id: JugNitricAcid
+  noSpawn: true
+  components:
+    - type: Label
+      currentLabel: reagent-name-nitric-acid
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          reagents:
+            - ReagentId: NitricAcid
+              Quantity: 200
+
+#Beans
+- type: entity
+  parent: Jug
+  name: jug
+  suffix: nitroglycerin
+  id: JugNitroglycerin
+  noSpawn: true
+  components:
+    - type: Label
+      currentLabel: reagent-name-nitroglycerin
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: DamageOnLand
+      damage:
+        types:
+          Blunt: 50
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -4
+      - !type:ExplodeBehavior
+      - !type:SpillBehavior
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 100
+      intensitySlope: 2
+      totalIntensity: 200
+    - type: RefillableSolution
+      solution: beaker
+    - type: DrainableSolution
+      solution: beaker
+    - type: ExaminableSolution
+      solution: beaker
+    - type: DrawableSolution
+      solution: beaker
+    - type: InjectableSolution
+      solution: beaker
+    - type: SolutionTransfer
+      canChangeTransferAmount: true
+    - type: SolutionItemStatus
+      solution: beaker
+    - type: Drink
+      solution: beaker
+    - type: Spillable
+      solution: beaker
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          reagents:
+            - ReagentId: Nitroglycerin
+              Quantity: 200
+    - type: StepTrigger
+      requiredTriggeredSpeed: 0
+      stepOn: true
+    - type: TileEntityEffect
+      effects:
+      - !type:ExplosionReactionEffect
+        explosionType: Default # 15 damage per intensity.
+        maxIntensity: 200
+        intensityPerUnit: 5
+        intensitySlope: 5
+        maxTotalIntensity: 200
+  tileReactions:
+    - !type:ExplodeBehavior

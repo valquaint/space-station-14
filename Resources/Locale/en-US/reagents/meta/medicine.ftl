@@ -141,3 +141,6 @@ reagent-desc-mannitol = Efficiently restores brain damage.
 
 reagent-name-psicodine = psicodine
 reagent-desc-psicodine = Suppresses anxiety and other various forms of mental distress. Overdose causes hallucinations and minor toxin damage.
+##Beans
+reagent-name-nitroglycerin = nitroglycerin
+reagent-desc-nitroglycerin = Suppresses chest pain due to blood loss or heart attack. Very powerful use low doses and handle with care!
