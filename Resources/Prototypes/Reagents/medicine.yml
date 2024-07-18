@@ -160,7 +160,7 @@
           min: 15
       - !type:Drunk
 
-#Beans
+# Nitroglycerin
 - type: reagent
   id: Nitroglycerin
   name: reagent-name-nitroglycerin
@@ -170,6 +170,20 @@
   physicalDesc: reagent-physical-desc-opaque
   flavor: medicine
   color: "#ffaa00"
+  components:
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 100
+      intensitySlope: 2
+      totalIntensity: 200
+    - type: TileEntityEffect
+      effects:
+      - !type:ExplosionReactionEffect
+        explosionType: Default # 15 damage per intensity.
+        maxIntensity: 200
+        intensityPerUnit: 5
+        intensitySlope: 5
+        maxTotalIntensity: 200
   metabolisms:
     Medicine:
       effects:
@@ -196,6 +210,7 @@
         - !type:ReagentThreshold
           min: 7
       - !type:Drunk
+  behavior: Explosion
   tileReactions:
   - !type:FlammableTileReaction
     temperatureMultiplier: 0.2

@@ -313,3 +313,6 @@ dockerfile
 
 # Server Config
 **/server_config.toml
+
+# Swap Files
+*.swp

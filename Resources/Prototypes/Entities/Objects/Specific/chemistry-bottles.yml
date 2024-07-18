@@ -334,7 +334,7 @@
           reagents:
             - ReagentId: Toxin
               Quantity: 30
-#Beans
+# Nitroglycerin
 - type: entity
   id: BeanChemistryBottle
   name: bean bottle
@@ -348,7 +348,7 @@
             - ReagentId: Beans
               Quantity: 30
 
-#Beans
+# Nitroglycerin
 - type: entity
   id: NitroglycerinChemistryBottle
   name: nitroglycerin bottle
@@ -362,15 +362,20 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 200
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-          params:
-            volume: -4
-      - !type:ExplodeBehavior
-      - !type:SpillBehavior
+          damage: 5
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: GlassBreak
+            params:
+              volume: -4
+        - !type:ExplodeBehavior
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - type: DamageOnLand
+      damage:
+        types:
+          Blunt: 5
     - type: Explosive
       explosionType: Default
       maxIntensity: 100
@@ -392,8 +397,8 @@
       solution: beaker
     - type: Drink
       solution: beaker
-    - type: Spillable
-      solution: beaker
+    # - type: Spillable
+    #   solution: beaker
     - type: SolutionContainerManager
       solutions:
         beaker:
@@ -403,5 +408,3 @@
     - type: StepTrigger
       requiredTriggeredSpeed: 0
       stepOn: false
-  tileReactions:
-    - !type:ExplodeBehavior
