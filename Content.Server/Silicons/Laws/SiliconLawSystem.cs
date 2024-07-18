@@ -3,16 +3,20 @@ using Content.Server.Administration;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Radio.Components;
+using Content.Server.Radio.EntitySystems;
 using Content.Server.Roles;
 using Content.Server.Station.Systems;
 using Content.Shared.Actions;
 using Content.Shared.Administration;
 using Content.Shared.Chat;
+using Content.Shared.Clothing.Components;
 using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Examine;
+using Content.Shared.Inventory;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
+using Content.Shared.Radio.Components;
 using Content.Shared.Roles;
 using Content.Shared.Silicons.Laws;
 using Content.Shared.Silicons.Laws.Components;
@@ -37,6 +41,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
     [Dependency] private readonly SharedStunSystem _stunSystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly SharedRoleSystem _roles = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -92,8 +97,17 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
     private void OnBoundUIOpened(EntityUid uid, SiliconLawBoundComponent component, BoundUIOpenedEvent args)
     {
         _entityManager.TryGetComponent<IntrinsicRadioTransmitterComponent>(uid, out var intrinsicRadio);
-        var radioChannels = intrinsicRadio?.Channels;
 
+        HashSet<string>? radioChannels;
+        _inventory.TryGetSlotEntity(uid, "ears", out var borgRadioID);
+        // if (!Resolve(borgRadioID, ref borgRadio))
+        // {
+
+        // }
+        // EncryptionKeyHolderComponent borgRadio = _entityManager.GetComponent<EncryptionKeyHolderComponent>(borgRadioID);
+        radioChannels = intrinsicRadio?.Channels;
+
+        borgRadio.Channels = radioChannels ?? new HashSet<string> { "Common" };
         var state = new SiliconLawBuiState(GetLaws(uid).Laws, radioChannels);
         _userInterface.SetUiState(args.Entity, SiliconLawsUiKey.Key, state);
     }
